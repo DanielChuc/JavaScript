@@ -9,12 +9,13 @@ console.log(27.56)
 /**
  * Tipos de dato String
  */
-console.log('Daniel Chuc')
-console.log('Eduardo Ceballos')
-console.log(`Hola, Soy Daniel`)
-    /**
-     * Tiposs de dato Logicos boolean
-     */
+console.log('Daniel Chuc');
+console.log('Eduardo Ceballos');
+var variables = "Buenas noches ";
+console.log(`Hola, ${variables}Soy Daniel`);
+/**
+ * Tiposs de dato Logicos boolean
+ */
 console.log(true)
 console.log(false)
     /**

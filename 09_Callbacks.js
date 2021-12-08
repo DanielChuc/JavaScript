@@ -9,13 +9,19 @@ const imprimir = (data) => console.log(data);
 suma(1, 2, imprimir);
 
 /**************************************************************************/
-const getData = (cb) => {
-    setTimeout(() => {
-        cb({
-            nombre: "Daniel",
-            apellido: "Chuc",
-        })
-    }, 3000);
+const getData = (cb, cbError) => {
+    if (false) {
+        setTimeout(() => {
+            cb({
+                nombre: "Daniel",
+                apellido: "Chuc",
+            })
+        }, 3000);
+
+    } else {
+        cbError(new Error('No se pudo obtener los datos'));
+    }
 }
 const imprimirData = (data) => console.log(data);
-getData(imprimirData);
+const errorHandler = (error) => console.log(error);
+getData(imprimirData, errorHandler);
